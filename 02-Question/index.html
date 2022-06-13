@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <P>Q. In how many ways can we loop in an array describe each with an example</P>
+     
+        <h4> There are 6's ways to loop into array <h4>
+            <ol>
+                <li> Accessing the element one by one</li>
+                <li>Using For loop</li>
+                <li>using while loop</li>
+                 <li>using forEach method. </li>
+                 <li>Using every method. </li>
+                 <li>Using map.</li>
+            </ol>
+
+          
+
+       
+    <script>
+           array = [ 'vishnu', '4', 'pratap' ];
+ 
+ // Accessing array elements one by one
+ console.log(array[0]);
+ console.log(array[1]);
+ console.log(array[2]);
+
+
+ // using for loop
+ array = [ 1, 2, 3, 4, 5, 6 ];
+for (index = 0; index < array.length; index++) {
+    console.log(array[index]);
+}
+
+
+// for each loop
+
+index = 0;
+array = [ 'v', 'i', 's', 'h', 'n', 'u' ];
+ 
+array.forEach(myFunction);
+function myFunction(item, index)
+{
+    console.log(item);
+}
+
+// using while loop
+array=[0,0,0,0,0,0]
+i=0;
+while (i<array.length) {
+    console.log(array[i])
+    i++;
+    
+}
+
+// using every method
+
+index = 0;
+array = [ 1, 2, 3, 8, 5, 21 ];
+ 
+const under_five = x => x < 5;
+ 
+if (array.every(under_five)) {
+    console.log('All are less than 5');
+}
+else {
+    console.log('At least one element is not less than 5');
+}
+
+
+// using map
+
+index = 0;
+array = [ 1, 2, 3, 4, 5, 6 ];
+ 
+square = x => Math.pow(x, 2);
+squares = array.map(square);
+console.log(array);
+console.log(squares);
+
+
+    </script>
+</body>
+</html>
